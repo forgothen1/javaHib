@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxhib.FXMLDocumentController">
+ 
+    <children>
+        <ChoiceBox layoutX="150" layoutY="20" fx:id="box1"/>
+       <TextField layoutX="250" layoutY="20" fx:id="pretrazivac" />
+  <Button layoutX="350" layoutY="20" text="pokreni" onAction="#pretraga"  fx:id="okidac"/>
+         <Button layoutX="126" layoutY="70" text="REMOVE" onAction="#paneRemove" fx:id="button" />
+          <Button layoutX="250" layoutY="70" text="ADD CLIENT" onAction="#dodavanje" fx:id="button2" />
+        <Button layoutX="350" layoutY="70" text="EDIT" onAction="#eidtable" fx:id="button3" />
+          <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <TableView layoutX="20" layoutY="110" minHeight="300" minWidth="500" fx:id="table">
+            <columns>
+            <TableColumn fx:id="id" prefWidth="75" text="id"/>
+             <TableColumn fx:id="ime" prefWidth="75" text="ime"/>
+              <TableColumn fx:id="prezime" prefWidth="75" text="prezime"/>
+               <TableColumn fx:id="adresa" prefWidth="75" text="adresa"/>
+                <TableColumn fx:id="dohodak" prefWidth="75" text="dohodak"/> 
+                </columns>
+            </TableView>
+    </children>
+</AnchorPane>
